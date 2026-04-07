@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Коммерческое предложение Xandor Pay</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <style>
+    *,*::before,*::after{box-sizing:border-box}
+    html,body{margin:0;padding:0;height:100%;font-family:system-ui,-apple-system,BlinkMacSystemFont,sans-serif;background:#0f172a;color:#e5e7eb}
+    body{overflow:hidden}
+    .deck{width:100vw;height:100vh;display:flex;align-items:stretch;justify-content:stretch;padding:16px}
+    .slide{width:100%;height:100%;border-radius:18px;background:#020617;padding:20px 24px 18px;display:none;flex-direction:column;justify-content:space-between;box-shadow:0 18px 40px rgba(15,23,42,.9)}
+    .slide.active{display:flex}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px}
+    h1,h2{margin:0}
+    h1{font-size:22px}
+    h2{font-size:20px}
+    .tag{font-size:11px;text-transform:uppercase;letter-spacing:.12em;color:#9ca3af}
+    ul{margin:10px 0 0;padding-left:18px;font-size:14px}
+    li{margin-bottom:6px}
+    .footer{display:flex;align-items:center;justify-content:space-between;font-size:11px;color:#6b7280;margin-top:14px}
+    button{border-radius:999px;border:1px solid #4b5563;background:#111827;color:#e5e7eb;font-size:11px;padding:6px 10px;cursor:pointer}
+    button.primary{border-color:#38bdf8;background:linear-gradient(135deg,#22d3ee,#4f46e5);color:#020617}
+    @media(max-width:900px){.deck{padding:0}.slide{border-radius:0;padding:16px 14px}h1{font-size:18px}h2{font-size:17px}ul{font-size:13px}}
+  </style>
+</head>
+<body>
+<div class="deck">
+  <div class="slide active">
+    <header>
+      <div>
+        <div class="tag">Коммерческое предложение</div>
+        <h1>Xandor Pay</h1>
+      </div>
+      <div class="tag">AI-DeFi платёжная платформа</div>
+    </header>
+    <main>
+      <p>Решение для приёма платежей и управления ликвидностью для малого и микробизнеса в Telegram и мобильных каналах.</p>
+      <ul>
+        <li>Единая точка приёма платежей: веб, мобильное приложение, Telegram Mini App.</li>
+        <li>AI-управление оборотной ликвидностью на базе DeFi-инструментов.</li>
+        <li>Фокус на российских и СНГ-компаниях, работающих в Telegram-экосистеме.</li>
+      </ul>
+    </main>
+    <div class="footer"><span>Слайд 1 / 7</span><button class="primary" onclick="nextSlide()">Далее</button></div>
+  </div>
+  <div class="slide">
+    <header><h2>Проблема</h2><div class="tag">Исходная ситуация</div></header>
+    <main>
+      <ul>
+        <li>Малый бизнес и создатели цифровых продуктов в РФ активно уходят в Telegram-экосистему.</li>
+        <li>Сложно принимать и распределять платежи в единой точке: веб, мобильное приложение, Telegram Mini App.</li>
+        <li>Отсутствует автоматизированное управление оборотной ликвидностью: средства лежат на счетах и не работают.</li>
+        <li>Инструменты DeFi и алгоритмические стратегии «урожайности» сложны для внедрения и сопровождения.</li>
+        <li>Предприниматели тратят время на интеграции и ручной контроль кассовых разрывов вместо развития продукта.</li>
+      </ul>
+    </main>
+    <div class="footer"><button onclick="prevSlide()">Назад</button><span>Слайд 2 / 7</span><button class="primary" onclick="nextSlide()">Далее</button></div>
+  </div>
+  <div class="slide">
+    <header><h2>Решение: Xandor Pay</h2><div class="tag">Описание продукта</div></header>
+    <main>
+      <ul>
+        <li>Платёжная платформа с Telegram Mini App и мобильным приложением.</li>
+        <li>Приём и маршрутизация платежей: банковские карты, СБП и другие локальные методы оплаты.</li>
+        <li>Единый кошелёк бизнеса в Telegram и мобильном приложении.</li>
+        <li>Встроенный AI-модуль DeFi-стратегий управления ликвидностью и доходностью.</li>
+        <li>Автоматическое распределение поступающих средств по счетам и пулам ликвидности с учётом риск-профиля.</li>
+        <li>Прогнозирование кассовых разрывов и рекомендации по пополнению и резервированию.</li>
+        <li>Упрощённый запуск DeFi-стратегий: «одна кнопка» без необходимости глубокой технической экспертизы.</li>
+      </ul>
+    </main>
+    <div class="footer"><button onclick="prevSlide()">Назад</button><span>Слайд 3 / 7</span><button class="primary" onclick="nextSlide()">Далее</button></div>
+  </div>
+  <div class="slide">
+    <header><h2>Рынок</h2><div class="tag">Объём и потенциал</div></header>
+    <main>
+      <ul>
+        <li>Фокус: Telegram-экосистема и мобильные финтех-сервисы для малого и микробизнеса в РФ и СНГ.</li>
+        <li>Аудитория Telegram в РФ — десятки миллионов пользователей, высокой степени вовлечённости.</li>
+        <li>Оборот через Telegram-боты и Mini Apps демонстрирует устойчивый рост.</li>
+        <li>Адресуемый рынок: комиссии с оборота платежей малого бизнеса (онлайн-сервисы, инфопродукты, SaaS, мини-маркетплейсы).</li>
+        <li>Дополнительно: комиссии и маржа DeFi-инфраструктуры и управления активами.</li>
+        <li>Совокупный потенциальный объём рынка оценивается в десятки миллиардов рублей при текущей динамике.</li>
+      </ul>
+    </main>
+    <div class="footer"><button onclick="prevSlide()">Назад</button><span>Слайд 4 / 7</span><button class="primary" onclick="nextSlide()">Далее</button></div>
+  </div>
+  <div class="slide">
+    <header><h2>Конкуренты и позиционирование</h2><div class="tag">Конкурентные преимущества</div></header>
+    <main>
+      <ul>
+        <li>Классические платёжные шлюзы: обеспечивают приём платежей, но не управляют ликвидностью и не используют AI-DeFi.</li>
+        <li>Telegram-платформы: позволяют принимать платежи внутри Mini App, но не решают задачи управления оборотным капиталом.</li>
+        <li>DeFi-решения: ориентированы на продвинутых пользователей, не адаптированы под предпринимателей и Telegram-UX.</li>
+        <li>Xandor Pay: связка Telegram Mini App + мобильное приложение + AI-DeFi-движок.</li>
+        <li>Готовые режимы управления ликвидностью: консервативный, сбалансированный, агрессивный.</li>
+        <li>Пользовательский интерфейс, ориентированный на владельца бизнеса, а не на криптотрейдера.</li>
+      </ul>
+    </main>
+    <div class="footer"><button onclick="prevSlide()">Назад</button><span>Слайд 5 / 7</span><button class="primary" onclick="nextSlide()">Далее</button></div>
+  </div>
+  <div class="slide">
+    <header><h2>Команда и бизнес-модель</h2><div class="tag">Компетенции и монетизация</div></header>
+    <main>
+      <ul>
+        <li>Технические фаундеры с опытом в финтехе и высоконагруженных системах.</li>
+        <li>Backend/DevOps: платёжная инфраструктура, интеграции с банками и шлюзами, работа с блокчейн-нодами и DeFi-протоколами.</li>
+        <li>Frontend/Mobile: Telegram Mini Apps, web-приложения, кроссплатформенные мобильные приложения.</li>
+        <li>AI/Quant: алгоритмическое управление ликвидностью и прогнозирование денежных потоков.</li>
+        <li>Product/BD: B2B-финтех, работа с малым бизнесом, партнёрства с платёжными провайдерами.</li>
+        <li>Комбинированная монетизация: комиссия с оборота платежей, доступ к AI-модулю, дополнительные сервисы (аналитика, отчётность, интеграции).</li>
+      </ul>
+    </main>
+    <div class="footer"><button onclick="prevSlide()">Назад</button><span>Слайд 6 / 7</span><button class="primary" onclick="nextSlide()">Далее</button></div>
+  </div>
+  <div class="slide">
+    <header><h2>Планы развития</h2><div class="tag">Следующие шаги</div></header>
+    <main>
+      <ul>
+        <li>Масштабирование в Telegram-экосистеме: готовые интеграции для донатов, подписок и продаж внутри Mini App.</li>
+        <li>Углубление AI-модуля: повышение точности прогнозирования, новые DeFi-стратегии, автоматические режимы управления «урожайностью».</li>
+        <li>Расширение партнёрств с банками и платёжными провайдерами.</li>
+        <li>Выход на международные рынки с высоким спросом на Telegram-решения и DeFi-инфраструктуру для малого бизнеса.</li>
+        <li>Формирование устойчивой партнёрской и клиентской экосистемы вокруг Xandor Pay.</li>
+      </ul>
+    </main>
+    <div class="footer"><button onclick="prevSlide()">Назад</button><span>Слайд 7 / 7</span><button class="primary" onclick="goFirst()">В начало</button></div>
+  </div>
+</div>
+<script>
+  const slides = Array.from(document.querySelectorAll('.slide'));
+  let current = 0;
+  function render(){slides.forEach((s,i)=>s.classList.toggle('active',i===current));}
+  function nextSlide(){if(current<slides.length-1){current++;render();}}
+  function prevSlide(){if(current>0){current--;render();}}
+  function goFirst(){current=0;render();}
+  document.addEventListener('keydown',e=>{if(e.key==='ArrowRight')nextSlide();if(e.key==='ArrowLeft')prevSlide();});
+</script>
+</body>
+</html>
